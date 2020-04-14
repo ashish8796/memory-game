@@ -377,8 +377,8 @@ saveName.addEventListener('submit', (event) => {
   localStorage.setItem('user', JSON.stringify(user));
   enterElem.addEventListener('click', (event)=> {
     if(event.target.id == 'submit') {
-      window.location.pathname = '/leader-board.html';
+      window.location.pathname = '/memory-card/leader-board.html';
     }
   })
-  window.location.pathname = '/leader-board.html';
+  window.location.pathname = '/memory-card/leader-board.html';
 })
