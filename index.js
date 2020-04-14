@@ -376,9 +376,10 @@ saveName.addEventListener('submit', (event) => {
   let user = { name: name, star: star, time: time, moves: moves, index: index };
   localStorage.setItem('user', JSON.stringify(user));
   enterElem.addEventListener('click', (event)=> {
-    if(event.target.id == 'submit') {
-      window.location.pathname = '/memory-card/leader-board.html';
-    }
+    // if(event.target.id == 'submit') {
+    //   console.log('I am working')
+    //   window.location.pathname = '/memory-card/leader-board.html';
+    // }
   })
   window.location.pathname = '/memory-card/leader-board.html';
 })
