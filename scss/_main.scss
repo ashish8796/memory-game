@@ -46,7 +46,7 @@ body{
     border-radius: 10px; 
     color: hsla(0, 0%, 0%, .9);
     font: normal 110px Varela Round, sans-serif;
-    height: 120px;
+    height: 100px;
     animation: move linear 2000ms infinite;  
   }
   
@@ -326,11 +326,11 @@ body{
 }
 
 footer {
-  width: 100%;
+  width: 98%;
   color: #fff;
   padding: 10px;
   font-size: 20px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   background: #47494a;
 }
@@ -378,7 +378,7 @@ table {
 }
 
 form {
-  display: none;
+  // display: none;
   align-items: center;
   height: 100px;
   border: 3px solid #113663cc;
@@ -387,6 +387,11 @@ form {
   position: absolute;
   top: 50%;
   z-index: 11;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
 
   button {
     margin-right: 20px;
