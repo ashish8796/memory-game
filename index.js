@@ -373,7 +373,7 @@ saveName.addEventListener('submit', (event) => {
   event.preventDefault();
 
   name = playerName.value;
-  let user = { name: name, star: star, time: time, moves: moves, index: index };
+  let user = { name: name, star: star, time: time, moves: moves, index: index};
   localStorage.setItem('user', JSON.stringify(user));  
   
   if (location.origin === 'https://ashish8796.github.io') {

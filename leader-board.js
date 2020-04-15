@@ -17,15 +17,16 @@ let easyScoresArr = [];
 let mediumScoresArr = [];
 let hardScoresArr = [];
 let scoreArr = [easyScoresArr, mediumScoresArr, hardScoresArr];
-let rowArr = [easyRow, mediumRow, hardRow];
+let rowArr = [easyScores, mediumScores, hardScores];
 let idArr = ['easy-row', 'medium-row', 'hard-row'];
 
 //Append fragment
 saveDetails();
-let newRow = easyScores.insertRow(-1);
+let newRow = rowArr[userData.index].insertRow(-1);
 newRow.appendChild(rowFragment);
 newRow.classList.add('detail')
 newRow.setAttribute('id', idArr[userData.index]);
+
 
 //Function for the saving the details
 function saveDetails() {
@@ -53,7 +54,6 @@ function saveDetails() {
 
   addRow(userData.name, userData.star, userData.time, userData.moves)
 }
-console.log(scoreArr[userData.index]);
 
 //Function for creating table element
 function addRow(name, star, time, moves) {
