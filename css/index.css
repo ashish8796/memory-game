@@ -3465,6 +3465,7 @@ form button:hover {
   .title .first-img {
     text-align: start;
     width: 75px;
+    margin-right: -2px;
   }
   .title #second-img {
     text-align: end;
