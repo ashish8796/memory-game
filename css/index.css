@@ -3400,9 +3400,8 @@ table td {
 }
 
 form {
-  display: none;
   align-items: center;
-  height: 100px;
+  height: 110px;
   border: 3px solid #113663cc;
   background-color: #64f5e7;
   border-radius: 5px;

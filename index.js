@@ -374,12 +374,11 @@ saveName.addEventListener('submit', (event) => {
 
   name = playerName.value;
   let user = { name: name, star: star, time: time, moves: moves, index: index };
-  localStorage.setItem('user', JSON.stringify(user));
-  enterElem.addEventListener('click', (event)=> {
-    // if(event.target.id == 'submit') {
-    //   console.log('I am working')
-    //   window.location.pathname = '/memory-card/leader-board.html';
-    // }
-  })
-  window.location.pathname = '/memory-card/leader-board.html';
-})
+  localStorage.setItem('user', JSON.stringify(user));  
+  
+  if (location.origin === 'https://ashish8796.github.io') {
+    window.location.pathname = '/memory-card/leader-board.html';
+  } else {
+    window.location.pathname = '/leader-board.html';
+  }
+});
