@@ -377,8 +377,14 @@ saveName.addEventListener('submit', (event) => {
   localStorage.setItem('user', JSON.stringify(user));  
   
   if (location.origin === 'https://ashish8796.github.io') {
-    window.location.pathname = '/memory-card/leader-board.html';
+    // history.pushState({}, "Leader Board", '/memory-card/leader-board.html')
+    
+    // location.replace('/memory-game/leader-board.html')
+
+    window.location.pathname = '/memory-game/leader-board.html';
   } else {
+    // location.replace('/leader-board.html')
+    // history.pushState({}, "Leader Board", '/leader-board.html')
     window.location.pathname = '/leader-board.html';
   }
 });
